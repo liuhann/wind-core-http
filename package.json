@@ -1,6 +1,6 @@
 {
   "name": "wind-core-http",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Http路由及处理模块",
   "main": "src/index.js",
   "scripts": {
