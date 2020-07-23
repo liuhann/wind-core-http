@@ -97,7 +97,10 @@ module.exports = {
                     ctx.body = {
                         code: '500000',
                         msg: 'Internal Server Error',
-                        error: err
+                        error: {
+                            message: err.message,
+                            stack: err.stack
+                        }
                     };
                 }
             }
