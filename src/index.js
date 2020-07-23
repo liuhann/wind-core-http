@@ -33,6 +33,12 @@ module.exports = {
         if (app.config.cors) {
             // CORS跨域支持
             app.use(cors(app.config.cors));
+        } else {
+            app.use(
+                cors({
+                    credentials: true
+                })
+            );
         }
         // 请求体解析，包括文件上传处理
         app.use(bodyParser({
